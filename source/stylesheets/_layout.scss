@@ -1,0 +1,12 @@
+.l-container {
+  @include row(table);
+  position: relative;
+  // background: yellow;
+}
+
+.l-half-col {
+  @include media($medium-screen-up) {
+    position: relative;
+    @include span-columns(6);
+  }
+}

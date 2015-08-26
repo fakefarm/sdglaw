@@ -1,0 +1,23 @@
+.blurb h4 {
+  font-weight: 200;
+}
+.content {
+  @include media($medium-screen-up) {
+    vertical-align: middle;
+    padding: 0 2em 2em;
+  }
+}
+
+.contact {
+
+  border-left: 1px solid $blue;
+  margin-top: 1em;
+  padding-left: 1em;
+
+  section{
+    @include media($medium-screen-up) {
+      margin-top: 0.25em;
+    }
+  }
+}
+

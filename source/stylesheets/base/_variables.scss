@@ -1,5 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200);
+
+// Google Fonts
+$source: "Source Sans Pro";
+
 // Typography
-$sans-serif: $helvetica;
+$sans-serif: $source;
 $serif: $georgia;
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
@@ -23,7 +28,8 @@ $base-spacing: $base-line-height * 1em;
 $base-z-index: 0;
 
 // Colors
-$blue: #477DCA;
+$blue: #0f5166;
+$light-blue: #1b8bb2;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #DDD;
@@ -35,8 +41,8 @@ $light-green: #E6EFC2;
 $base-background-color: white;
 
 // Font Colors
-$base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-font-color: $blue;
+$base-accent-color: $light-blue;
 
 // Link Colors
 $base-link-color: $base-accent-color;
