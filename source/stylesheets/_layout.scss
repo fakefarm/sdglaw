@@ -1,29 +1,20 @@
 .l-container {
   @include outer-container;
 
-  @include media($medium-screen-up) {
+  @include media($medium-screen) {
     margin-top: 10em;
   }
 }
 
-.l-half-col {
-  @include media($medium-screen-up) {
-    position: relative;
-    @include span-columns(6);
-  }
-}
-
 .l-skinny-col {
-  @include media($medium-screen-up) {
-    // _dw why is this not affecting img?
+  @include media($medium-screen) {
     @include span-columns(3);
   }
 }
 
 .l-fat-col {
-  @include media($medium-screen-up) {
-    // _dw why is not adding up to 12 and working with l-container's outer container?
-    @include span-columns(2.9);
+  @include media($medium-screen) {
+    @include span-columns(9);
   }
 }
 

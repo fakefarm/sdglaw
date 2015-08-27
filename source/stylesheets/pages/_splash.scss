@@ -2,12 +2,6 @@
   font-weight: 200;
 }
 
-.mug {
-  @include media($medium-screen) {
-    @include span-columns(3);
-  }
-}
-
 .content {
   @include media($medium-screen-up) {
     vertical-align: middle;
@@ -17,25 +11,13 @@
     @include media($medium-screen-up) {
       @include span-columns(3);
       @include shift(0.25);
-      @include clearfix;
-    }
-    img {
-      width: 100%;
     }
   }
 }
 
-
 .contact {
-
   border-left: 1px solid $blue;
   margin-top: 1em;
   padding-left: 1em;
-
-  section{
-    @include media($medium-screen-up) {
-      margin-top: 0.25em;
-    }
-  }
 }
 
