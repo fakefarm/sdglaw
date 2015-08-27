@@ -16,7 +16,7 @@
   .logo {
     @include media($medium-screen-up) {
       @include span-columns(3);
-      @include shift(0.5);
+      @include shift(0.25);
       @include clearfix;
     }
     img {
