@@ -1,13 +1,30 @@
 .blurb h4 {
   font-weight: 200;
 }
+
+.mug {
+  @include media($medium-screen) {
+    @include span-columns(3);
+  }
+}
+
 .content {
-  padding: 1em;
   @include media($medium-screen-up) {
     vertical-align: middle;
     padding: 0 2em 2em;
   }
+  .logo {
+    @include media($medium-screen-up) {
+      @include span-columns(3);
+      @include shift(0.5);
+      @include clearfix;
+    }
+    img {
+      width: 100%;
+    }
+  }
 }
+
 
 .contact {
 

@@ -1,7 +1,9 @@
 .l-container {
-  @include row(table);
-  position: relative;
-  // background: yellow;
+  @include outer-container;
+
+  @include media($medium-screen-up) {
+    margin-top: 10em;
+  }
 }
 
 .l-half-col {
@@ -10,3 +12,18 @@
     @include span-columns(6);
   }
 }
+
+.l-skinny-col {
+  @include media($medium-screen-up) {
+    // _dw why is this not affecting img?
+    @include span-columns(3);
+  }
+}
+
+.l-fat-col {
+  @include media($medium-screen-up) {
+    // _dw why is not adding up to 12 and working with l-container's outer container?
+    @include span-columns(3);
+  }
+}
+
