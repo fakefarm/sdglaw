@@ -14,7 +14,7 @@
 
 .l-fat-col {
   @include media($medium-screen) {
-    @include span-columns(9);
+    @include span-columns(8);
   }
 }
 
