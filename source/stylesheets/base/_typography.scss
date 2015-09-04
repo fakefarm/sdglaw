@@ -51,7 +51,6 @@ a {
   @include transition(all 200ms linear);
   color: $base-link-color;
   text-decoration: none;
-  border-radius: 3px;
 
   &:hover {
     background: $base-link-color;

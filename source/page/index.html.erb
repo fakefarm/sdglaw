@@ -10,16 +10,26 @@
   <section class='hero module'>
     <%= image_tag 'logo.jpg' %>
   </section>
+  <section class='tagline module'>
+    <h2>
+      Religious Institutions&nbsp;&nbsp;&nbsp;
+      Bankruptcy&nbsp;&nbsp;&nbsp;
+      Business Disputes
+    </h2>
+  </section>
+  <div id='contact'></div>
+  <br>
   <section class='contact module'>
     <h4>contact</h4>
     <ul>
-      <li>dhyams@sdglawllc.com</li>
+      <li><%= mail_to 'dhyams@sdglawllc.com' %></li>
       <li>720-989-1281</li>
       <li>PO Box 100242, Denver, CO 80250</li>
     </ul>
   </section>
 
-  <section id='case-matters' class='module'>
+  <span id='case-matters'></span>
+  <section class='module' id='case-wrapper'>
     <h2>Representative Case/Matters</h2>
     <section class='col-1'>
       <article class='case'>
@@ -50,14 +60,15 @@
       </article>
     </section>
   </section><!-- case matters -->
+  <span id='about'></span>
   <section class='module about'>
     <div class='image'>
       <%= image_tag 'david_hyams.jpg' %>
     </div>
     <div class='copy'>
-      <h2>About Dave</h2>
+      <h2>About David Hyams</h2>
       <p>
-        Thank you for visiting SDG Law!  One of the five great “solas” of the Reformation, *Soli Deo Gloria* is not only the inspiration of the firm’s name, it is the purpose of the firm’s existence: to bring glory to God alone.
+        Thank you for visiting SDG Law!  One of the five great “solas” of the Reformation, <b>Soli Deo Gloria</b> is not only the inspiration of the firm’s name, it is the purpose of the firm’s existence: to bring glory to God alone.
       </p>
       <p>
         Being a lawyer is a holy calling. It is my ministry. Whether I am representing an individual, a church, a school, a bank, or a company, I am honored to serve and advocate for those in need of legal assistance.
@@ -71,19 +82,34 @@
       </p>
       <p>
         I enjoy reading, assisting my wife in home educating our two children, traveling, and camping in the beautiful Colorado outdoors.
-      The firm’s logo represents the five smooth stones David chose for his battle with Goliath (1 Samuel 17:40). Collectively, they
-      signify the larger law practice, but just as it took only one stone to slay the giant, it takes only one lawyer at SDG Law to meet your legal needs, regardless of the size of the opposition.
+      </p>
+      <p>
+      The firm’s logo represents the five smooth stones David chose for his battle with Goliath in </p>
+      <div class="tooltip-item">
+        1 Samuel 17:40
+        <div class="tooltip">
+          <i>Then he took his staff in his hand, chose five smooth stones from the stream, put them in the pouch of his shepherd’s bag and, with his sling in his hand, approached the Philistine. (NIV)</i>
+        </div>
+      </div>
+      <p>
+      Collectively, they signify the larger law practice, but just as it took only one stone to slay the giant, it takes only one lawyer at SDG Law to meet your legal needs, regardless of the size of the opposition.
       </p>
       <p>
         If you’re looking for an attorney who will deliver premium service at a price commensurate with the problem, let’s talk.  I would be honored to walk alongside you as you navigate this season of your personal, business, or ministry life.
       </p>
       <p>
-        SDG,
-      David
+        David Hyams, Founder
+      </p>
+      <div class='signature'>
+        <%= image_tag 'signature.png' %>
+      </div>
+      <p>
+        SDG LAW, llc
       </p>
     </div>
   </section> <!-- about -->
-
+  <span id='details'></span>
+  <h2>Details</h2>
   <div class="vertical-tabs-container module">
     <div class="vertical-tabs">
       <a href="javascript:void(0)" class="js-vertical-tab vertical-tab is-active" rel="tab1">MEMBERSHIPS AND AFFILIATIONS</a>
@@ -194,19 +220,19 @@
       </div>
     </div>
   </div>
-  <footer class='module'>
-    <%= partial 'shared/nav' %>
-    <section class='contact'>
-      <ul>
-        <li>dhyams@sdglawllc.com</li>
-        <li>720-989-1281</li>
-        <li>PO Box 100242, Denver, CO 80250</li>
-      </ul>
-    </section>
-  </footer>
 </section>
-<section class='ending'>
+<section class='ending module'>
   <%= partial 'shared/nav' %>
   <h1 class='animated fadeInUp'>SDG LAW</h1>
   <h2 class='animated fadeInUp'>Passion. Excellence. Care.</h2>
+  <!-- <section class='contact module'>
+    <ul>
+      <li><%= mail_to 'dhyams@sdglawllc.com' %></li>
+      <li>720-989-1281</li>
+      <li>PO Box 100242, Denver, CO 80250</li>
+    </ul>
+  </section>
+  <section class='aor module'>
+    <p>design and code by <%= link_to 'andy or dave', '' %></p>
+  </section> -->
 </section>

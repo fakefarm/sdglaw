@@ -14,7 +14,7 @@
   $tab-content-background: lighten($tab-border-color, 10%);
   $tab-active-color: $tab-content-background;
   $tab-inactive-color: $base-background-color;
-  $vertical-tabs-height: em(300);
+  $vertical-tabs-height: 45em;
   $vertical-tab-mode: $medium-screen;
 
   @include clearfix;
@@ -40,7 +40,7 @@
       display: inline;
       float: left;
       height: $vertical-tabs-height;
-      width: 20%;
+      width: 30%;
     }
   }
 
@@ -76,8 +76,15 @@
       outline: none;
     }
 
+    li {
+      @include media($medium-screen) {
+        margin: 1em 0;
+        list-style: disc;
+      }
+    }
+
     @include media($vertical-tab-mode) {
-      @include size(80% $vertical-tabs-height);
+      @include size(70% $vertical-tabs-height);
       background-color: $tab-content-background;
       display: inline-block;
     }
