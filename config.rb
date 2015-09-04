@@ -1,3 +1,5 @@
+sprockets.append_path File.join root, 'bower_components'
+
 activate :livereload
 activate :directory_indexes
 
@@ -19,3 +21,4 @@ configure :build do
   activate :minify_javascript
   activate :relative_assets
 end
+

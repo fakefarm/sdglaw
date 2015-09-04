@@ -48,12 +48,15 @@ p {
 }
 
 a {
-  @include transition(color 0.1s linear);
+  @include transition(all 200ms linear);
   color: $base-link-color;
   text-decoration: none;
+  border-radius: 3px;
 
   &:hover {
-    color: $hover-link-color;
+    background: $base-link-color;
+    color: #DEDEDE;
+    border-bottom: none;
   }
 
   &:active, &:focus {
