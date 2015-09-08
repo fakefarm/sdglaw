@@ -3,7 +3,7 @@ title: SDG LAW, llc | David Hyams
 ---
 <section class='welcome'>
   <%= partial 'shared/nav' %>
-  <h1 class='animated fadeInUp'>SDG LAW</h1>
+  <h1 class='animated fadeInUp'><%= image_tag 'logo_bw.png' %></h1>
   <h2 class='animated fadeInUp'>Passion. Excellence. Care.</h2>
 </section>
 <section class='l-container content'>
@@ -28,12 +28,18 @@ title: SDG LAW, llc | David Hyams
       <li><%= mail_to 'dhyams@sdglawllc.com' %></li>
       <li>720-989-1281</li>
       <li>PO Box 100242, Denver, CO 80250</li>
+      <li class=''>
+        <%= link_to '','http://www.twitter.com/dhyams', class: 'fa fa-twitter', target: '_blank' %>
+      </li>
+      <li class=''>
+        <%= link_to '','https://www.linkedin.com/pub/david-hyams/b/51/311', class: 'fa fa-linkedin', target: '_blank' %>
+      </li>
     </ul>
   </section>
 
-  <span id='case-matters'></span>
+  <span id='cases'></span>
   <section class='module' id='case-wrapper'>
-    <h2>Representative Case/Matters</h2>
+    <h2>Representative Cases</h2>
     <section class='col-1'>
       <article class='case'>
         Advised churches and ministries of various sizes and denominations in matters regarding employment, property disputes, security and reporting protocols, facility usage, and constitutional rights.
@@ -71,7 +77,7 @@ title: SDG LAW, llc | David Hyams
     <div class='copy'>
       <h2>About David Hyams</h2>
       <p>
-        Thank you for visiting SDG Law!  One of the five great “solas” of the Reformation, <b>Soli Deo Gloria</b> is not only the inspiration of the firm’s name, it is the purpose of the firm’s existence: to bring glory to God alone.
+        Thank you for visiting SDG Law!  One of the five great “solas” of the Reformation, <i>Soli Deo Gloria</i> is not only the inspiration of the firm’s name, it is the purpose of the firm’s existence: to bring glory to God alone.
       </p>
       <p>
         Being a lawyer is a holy calling. It is my ministry. Whether I am representing an individual, a church, a school, a bank, or a company, I am honored to serve and advocate for those in need of legal assistance.
@@ -107,7 +113,7 @@ title: SDG LAW, llc | David Hyams
         <%= image_tag 'signature.png' %>
       </div>
       <p>
-        SDG LAW, llc
+        SDG Law LLC
       </p>
     </div>
   </section> <!-- about -->
@@ -136,8 +142,6 @@ title: SDG LAW, llc | David Hyams
           <li>American Bankruptcy Institute, Member</li>
           <li>Faculty of Federal Advocates, Member</li>
           <li>Christian Legal Society, Member</li>
-          <li>Justice and Mercy Legal Aid Clinic, Advisory Board Member and Pro Bono Volunteer</li>
-          <li>Denver Seminary, Training and Mentoring Program Volunteer</li>
         </ul>
       </div>
 
@@ -219,6 +223,8 @@ title: SDG LAW, llc | David Hyams
       <div id="tab9" class="js-vertical-tab-content vertical-tab-content">
         <ul>
           <li>Board Member, Christian Leadership Alliance, Denver Chapter‎</li>
+          <li>Justice and Mercy Legal Aid Clinic, Advisory Board Member and Pro Bono Volunteer</li>
+          <li>Denver Seminary, Training and Mentoring Program Volunteer</li>
         </ul>
       </div>
     </div>
@@ -226,7 +232,7 @@ title: SDG LAW, llc | David Hyams
 </section>
 <section class='ending module'>
   <%= partial 'shared/nav' %>
-  <h1 class='animated fadeInUp'>SDG LAW</h1>
+  <h1 class='animated fadeInUp'><%= image_tag 'logo_bw.png' %></h1>
   <h2 class='animated fadeInUp'>Passion. Excellence. Care.</h2>
   <!-- <section class='contact module'>
     <ul>
