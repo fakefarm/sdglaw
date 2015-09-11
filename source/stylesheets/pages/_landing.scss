@@ -10,7 +10,6 @@ body {
 .welcome {
   display: none;
   @include media($medium-screen) {
-    border-bottom: 90px solid rgba(255,255,255,0.6);
     display: block;
     position: relative;
     background: image-url('stone.jpg')  no-repeat center center fixed;
@@ -19,7 +18,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
-    height: 920px;
+    height: 800px;
 
     h1, h2 {
       color: white;
@@ -32,11 +31,11 @@ body {
       }
     }
     h2 {
-      color: #9B9B9B;
+      color: rgba(255,255,255,0.7);
       @include media($medium-screen) {
-        font-size: 4em;
-        top: 2em;
-        left: 1.5em;
+        font-size: 3.25em;
+        top: 3em;
+        left: 2em;
       }
     }
   }
@@ -48,7 +47,7 @@ body {
   @include media($medium-screen) {
     border-top: 25px solid $blue;
     padding: 2em;
-    margin-top: 3em;
+    margin-top: 2em;
   }
 }
 
@@ -155,6 +154,7 @@ h2 {
     background: #aaa;
     color: white;
     padding: 0.25em;
+    font-weight: 100;
     @include media($medium-screen) {
       padding: 0.25em;
       text-align: right;
@@ -175,6 +175,12 @@ h2 {
       display: inline-block;
       margin-left: 2em;
       font-size: 1.2em;
+      font-family: $source;
+      font-weight: 100;
+      a {
+        font-family: $source;
+        font-weight: 100;
+      }
     }
   }
 }
