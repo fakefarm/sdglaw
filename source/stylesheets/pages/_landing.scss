@@ -208,11 +208,11 @@ h2 {
       }
     }
     h2 {
-      color: #9B9B9B;
+      color: rgba(255,255,255,0.7);
       @include media($medium-screen) {
-        font-size: 4em;
-        top: 2em;
-        left: 1.5em;
+        font-size: 3.25em;
+        top: 3em;
+        left: 2em;
       }
     }
   }
