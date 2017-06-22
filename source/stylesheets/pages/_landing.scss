@@ -236,3 +236,9 @@ h2 {
 .subline {
   text-align: center;
 }
+
+.no-style-hover {
+  &:hover {
+    background: none;
+  }
+}
